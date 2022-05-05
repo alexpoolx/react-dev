@@ -1,6 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Componente from "./componentes/Components";
+import Propiedades from "./componentes/Propiedades";
 function App() {
   return (
     <div className="App">
@@ -18,6 +19,21 @@ function App() {
           Learn React
         </a>
       </header>
+
+      <Componente msg="Esto es un componente" />
+
+      <Propiedades
+        cadena="Probando propiedades"
+        numero={25}
+        boolean={true}
+        arreglo={[1, 2, 3]}
+        objeto={{ nombre: "Alexander", correo: "alexpoolx@gmail.com" }}
+        funcion={(num) => num * num}
+        elementoReact={<i>Esto es un elemento React</i>}
+        componenteReact={
+          <Componente msg="Soy un componente pasado como props" />
+        }
+      />
     </div>
   );
 }
