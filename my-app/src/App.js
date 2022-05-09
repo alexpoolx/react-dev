@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Componente from "./componentes/Components";
 import Propiedades from "./componentes/Propiedades";
+import Estado from "./componentes/Estado";
 function App() {
   return (
     <div className="App">
@@ -21,7 +22,7 @@ function App() {
       </header>
 
       <Componente msg="Esto es un componente" />
-
+      <hr></hr>
       <Propiedades
         cadena="Probando propiedades"
         numero={25}
@@ -34,6 +35,10 @@ function App() {
           <Componente msg="Soy un componente pasado como props" />
         }
       />
+      <hr></hr>
+      <div>
+        <Estado/>
+      </div>
     </div>
   );
 }

@@ -22,7 +22,23 @@ export default function Propiedades(props){
 
 Propiedades.defaulProps = {
     porDefecto : "Propiedades"
+}/*class Propiedades extends Component {
+  render() {
+    let props = "Propiedades";
+    return (
+      <div>
+        <h2>{props}</h2>
+        <ul>
+          <li>{this.props.cadena}</li>
+          <li>{this.props.numero}</li>
+          <li>{this.props.boolean ? "Verdadero" : "Falso"}</li>
+        </ul>
+      </div>
+    );
+  }
 }
+
+export default Propiedades;*/
 
 /*class Propiedades extends Component {
   render() {
