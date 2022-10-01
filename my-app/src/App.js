@@ -6,6 +6,12 @@ import Estado from "./componentes/Estado";
 import RenderizadoCondicional from "./componentes/RenderizadoCondicional";
 import RenderizadoElementos from "./componentes/RederizadoElementos";
 import {EventosES6, EventosES7, MasSobreEventos} from "./componentes/Eventos";
+import ComunicacionComponent from "./componentes/ComunicacionComponent";
+import ReactComponentsI from "./componentes/course"; 
+import NPropiedad from "./componentes/NPropiedad";
+import State from "./componentes/State";
+import {NEventosES7,MasEventos} from "./componentes/EventosES7";
+import Comunicacion from "./componentes/Comunicacion";
 function App() {
   return (
     <div className="App">
@@ -40,6 +46,9 @@ function App() {
       />
       <hr></hr>
       <div>
+        <State/>
+      </div>
+      <div>
         <RenderizadoCondicional />
       </div>
       <hr></hr>
@@ -52,6 +61,20 @@ function App() {
       <EventosES7 />
       <hr></hr>
       <MasSobreEventos/>
+      <hr></hr>
+      
+      <div>
+        <ReactComponentsI name="Paul Alexander"/>
+        <h2>Propiedades Otra</h2>
+        <NPropiedad/>
+      </div>
+      <hr></hr>
+      <div>
+        <NEventosES7/>
+        <MasEventos/>
+        <hr></hr>
+        <Comunicacion/>
+      </div>
     </div>
   );
 }

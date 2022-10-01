@@ -20,9 +20,14 @@ export default function Propiedades(props){
     );
 }
 
-Propiedades.defaulProps = {
+
+
+Propiedades.defaultProps = {
     porDefecto : "Propiedades"
-}/*class Propiedades extends Component {
+}
+
+
+/*class Propiedades extends Component {
   render() {
     let props = "Propiedades";
     return (

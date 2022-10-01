@@ -1,6 +1,6 @@
-import React, {Component} from "react";
+import React,{Component} from "react";
 
-function EstadoAHijo(props){
+ function EstadoHijo(props){
     return(
         <div>
             <h3>{props.contadorHijo}</h3>
@@ -8,8 +8,7 @@ function EstadoAHijo(props){
     );
 }
 
-export default class Estado extends Component{
-    
+export default class State extends Component{
     constructor(props){
         super(props);
         this.state = {
@@ -19,17 +18,17 @@ export default class Estado extends Component{
         setInterval(()=>{
             this.setState({
                 contador:this.state.contador + 1
-            });
-        },1000);
-    };
+            })
+        },1000)
+    }
 
     render(){
-        return (
+        return(
             <div>
-                <h2>State</h2>
+                <h5>Probando Estado</h5>
                 <p>{this.state.contador}</p>
-                <EstadoAHijo contadorHijo={this.state.contador} />
+                <EstadoHijo contadorHijo={this.state.contador}/>
             </div>
-        );
+        )
     }
 }
